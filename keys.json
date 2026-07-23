@@ -4,7 +4,7 @@
       "key": "DucTienSinhVip",
       "expiry": "2099-12-31",
       "note": "Vĩnh viễn",
-      "max_activations": 99
+      "max_activations": 99999999
     },
     {
       "key": "Key-TieuMiuLogin7D06H273",
@@ -14,9 +14,9 @@
     },
     {
       "key": "Key-TieuMiuLogin15DH2353",
-      "expiry": "2026-08-10",
-      "note": "15 ngày",
-      "max_activations": 20
+      "expiry": "2026-08-15",
+      "note": "20 ngày",
+      "max_activations": 200
     }
   ]
 }
