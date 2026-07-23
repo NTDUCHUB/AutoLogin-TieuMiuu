@@ -1,14 +1,22 @@
-import hmac, hashlib, base64, json
-
-SECRET = b"DucYeuMeo"
-keys = ["DucTienSinhVip", "Key-TieuMiuLogin7D06H273", "Key-TieuMiuLogin15DH2353"]
-
-data = {"keys": []}
-for k in keys:
-    sig = base64.b64encode(hmac.new(SECRET, k.encode(), hashlib.sha256).digest()).decode()
-    expiry = "2099-12-31" if k == "DucTienSinhVip" else ("2026-08-02" if k == "Key-TieuMiuLogin7D06H273" else "2026-08-10")
-    note = "Vĩnh viễn" if k == "DucTienSinhVip" else ("7 ngày" if k == "Key-TieuMiuLogin7D06H273" else "15 ngày")
-    max_act = 1 if k != "Key-TieuMiuLogin15DH2353" else 2
-    data["keys"].append({"sig": sig, "expiry": expiry, "note": note, "max_activations": max_act})
-
-print(json.dumps(data, indent=2))
+{
+  "keys": [
+    {
+      "key": "DucTienSinhVip",
+      "expiry": "2099-12-31",
+      "note": "Vĩnh viễn",
+      "max_activations": 1
+    },
+    {
+      "key": "Key-TieuMiuLogin7D06H273",
+      "expiry": "2026-08-02",
+      "note": "7 ngày",
+      "max_activations": 1
+    },
+    {
+      "key": "Key-TieuMiuLogin15DH2353",
+      "expiry": "2026-08-10",
+      "note": "15 ngày",
+      "max_activations": 2
+    }
+  ]
+}
