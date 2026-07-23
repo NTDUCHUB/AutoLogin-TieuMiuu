@@ -1,0 +1,22 @@
+{
+  "keys": [
+    {
+      "sig": "DucTienSinhVip",
+      "expiry": "2099-12-31",
+      "note": "Vĩnh viễn",
+      "max_activations": 1
+    },
+    {
+      "sig": "Key-TieuMiuLogin7D06H273",
+      "expiry": "2026-08-02",
+      "note": "7 ngày",
+      "max_activations": 1
+    },
+    {
+      "sig": "Key-TieuMiuLogin15DH2353",
+      "expiry": "2026-08-10",
+      "note": "15 ngày",
+      "max_activations": 2
+    }
+  ]
+}
